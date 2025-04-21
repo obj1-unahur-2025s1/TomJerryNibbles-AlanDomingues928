@@ -2,16 +2,16 @@ import tomJerryNibbles.*
 
 describe "Grupo de test" {
 
-  test "test 1" {
-    assert.equals(100, 50+50)
+  test "la Energia de Tom es igual a 50 de entrada" {
+    assert.equals(50, tom.energia())
   }
 
-  test "test 3" {
-    assert.that(true)
+  test "Puede recorrer cierta distancia = 30" {
+    assert.that(tom.puedeCazar(30))
   }
 
-  test "test 4" {
-    assert.notThat(false)
+  test "el peso de jerry es 40" {
+    assert.that(jerry.peso())    
   }
 
 }
